@@ -122,7 +122,6 @@ if (birthYear <= 2000) {
   century = 21;
 }
 console.log(century);
-*/
 
 //type conversion //
 
@@ -132,3 +131,127 @@ console.log(Number(inputYear) + 18);
 console.log(String(23));
 
 //type coercion
+console.log("23" * "2");
+
+
+//5 falsey values: 0, '', undefined, null, NaN
+
+const money = 0;
+if (money) {
+  console.log("Don't spend it all;");
+} else {
+  console.log("You should get a job");
+}
+
+let height;
+if (height) {
+  console.log("height is defined");
+} else {
+  console.log("height is undefined ");
+}
+
+const age = 18;
+if (age === 18) {
+  console.log("You just became an adult");
+}
+
+const favourite = Number(prompt("what's your favorite number?"));
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite === 2020) {
+  console.log("Cool! 21020 is amazing");
+} else if (favourite === 7) {
+  console.log("7 is also good");
+} else {
+  console.log("Numbner is not 2020 or 7");
+}
+
+if (favourite !== 23) console.log("why not 23");
+
+const hasDriversLicense = true;
+const hasGoodVision = true;
+//
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+const shouldDrive = hasDriversLicense && hasGoodVision;
+
+if (shouldDrive) {
+  console.log("Sarah is able to drive");
+} else {
+  console.log("someone else should drive");
+}
+//
+
+const isTired = false;
+console.log(hasDriversLicense || hasGoodVision || isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+  console.log("Sarah is able to drive");
+} else {
+  console.log("someone else should drive");
+}
+
+const day = "monday";
+switch (day) {
+  case "monday": // day == monday
+  console.log("Plan course structure");
+  console.log("Go to coding meetup");
+  break;
+  case "tuesday":
+    console.log("prepa theory videos");
+    break;
+    case "wednesday":
+      case "thursday":
+        console.log("write code examples");
+        break;
+        
+        case "friday":
+          console.log("Record videos");
+          break;
+          
+          case "saturday":
+            case "sunday":
+              console.log("Enjoe weekend");
+              break;
+              default:
+                console.log("Not a valid day!");
+              }
+              
+              const day = "sunday";
+              if (day == "monday") {
+                console.log("Plan course structure");
+  console.log("Go to coding meetup");
+} else if (day == "tuesday") {
+  console.log("prepare theory videos");
+} else if (day == "thursday" || day == "wednesday") {
+  console.log("Record videos");
+} else if (day == "friday") {
+  console.log("prepare theory videos");
+} else if (day == "saturday" || day == "sunday") {
+  console.log("Enjoy weekend");
+} else {
+  console.log("Not a valid day!");
+}
+
+const age = 23;
+age >= 18 ? console.log("i like wine") : console.log("i like to drink water");
+
+*/
+const age = 23;
+
+const drink = age >= 18 ? "wine" : "water";
+console.log(drink);
+
+let drink2;
+if (age >= 18) {
+  drink2 = "wine";
+} else {
+  drink2 = "water";
+}
+
+console.log(drink2);
+
+console.log(`i like to drink ${age >= 18 ? "wine" : "water"}`);

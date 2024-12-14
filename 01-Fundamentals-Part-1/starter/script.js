@@ -132,7 +132,3 @@ console.log(Number(inputYear) + 18);
 console.log(String(23));
 
 //type coercion
-
-console.log(I am);
-
-

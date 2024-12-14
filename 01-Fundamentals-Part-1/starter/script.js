@@ -112,7 +112,6 @@ if (age >= 18) {
   const yearLeft = 18 - age;
 console.log(`Sarah is too yound, wit another ${yearLeft} years :)!`);
 }
-*/
 
 const birthYear = 2012;
 
@@ -123,3 +122,17 @@ if (birthYear <= 2000) {
   century = 21;
 }
 console.log(century);
+*/
+
+//type conversion //
+
+const inputYear = "1991";
+console.log(Number(inputYear));
+console.log(Number(inputYear) + 18);
+console.log(String(23));
+
+//type coercion
+
+console.log(I am);
+
+

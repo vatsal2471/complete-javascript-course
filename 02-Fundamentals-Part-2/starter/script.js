@@ -182,29 +182,62 @@ console.log(jonas["last" + nameKey]);
         `${jonas.firstName} has ${jonas.friends.length} friends and his best friend is called ${jonas.friends[0]}`
       );
       
-      */
+      
+      const jonas = {
+        firstNacl
+        me: "Jonas",
+        lastName: "Schmedtmann",
+        birthYear: 1991,
+        job: "teacher",
+        friends: ["Michael", "Peter", "Steven"],
+        hasDriversLicense: true,
+        
+        // calcAge: function (birthYear) {
+          //   return 2037 - birthYear;
+          // },
+          
+          calcAge: function () {
+            this.age = 2037 - this.birthYear;
+            return this.age;
+          },
+        };
+        console.log(jonas.calcAge(jonas.birthYear));
+        console.log(jonas.age);
+        console.log(jonas.age);
+        console.log(jonas.age);
+        console.log(jonas.age);
+        
+        //Challenge
+        
+        // console.log("lifting weights repition 1");
+        
+        // for loop keep running while condition is TRUE
+        
+        for (let rep = 1; rep <= 10; rep++) {
+          console.log(`lifting weights repition ${rep}`);
+        }
+        
+        const jonas = [
+          "jonas",
+          "Schmedtmann",
+          2037 - 1991,
+          "teacher",
+          ["Michael", "Peter", "Steven"],
+        ];
 
-const jonas = {
-  firstName: "Jonas",
-  lastName: "Schmedtmann",
-  birthYear: 1991,
-  job: "teacher",
-  friends: ["Michael", "Peter", "Steven"],
-  hasDriversLicense: true,
+        for (let i = jonas.length - 1; i >= 0; i--) {
+  console.log(i, jonas[i]);
+}
 
-  // calcAge: function (birthYear) {
-  //   return 2037 - birthYear;
-  // },
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`lifting weights repition ${rep}`);
+}
 
-  calcAge: function () {
-    this.age = 2037 - this.birthYear;
-    return this.age;
-  },
-};
-console.log(jonas.calcAge(jonas.birthYear));
-console.log(jonas.age);
-console.log(jonas.age);
-console.log(jonas.age);
-console.log(jonas.age);
+let rep = 1;
 
-//Challenge
+while (rep <= 10) {
+  console.log(`lifting weights repition ${rep}`);
+  rep++;
+}
+
+*/

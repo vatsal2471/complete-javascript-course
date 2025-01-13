@@ -1,3 +1,3 @@
 //Importing module
-import './shoppingCart';
+import './';
 console.log('Importing module');
